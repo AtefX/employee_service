@@ -4,7 +4,6 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://localhost:3306/mydatabase
-    username: myuser
-    password: mypassword
-
+    url: jdbc:mysql://${SPRING_DATASOURCE_URL:localhost}:${DB_PORT:3306}/mydatabase
+    username: ${SPRING_DATASOURCE_USERNAME:myuser}
+    password: ${SPRING_DATASOURCE_PASSWORD:mypassword}
