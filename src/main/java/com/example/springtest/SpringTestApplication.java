@@ -8,13 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringTestApplication {
 
     public static void main(String[] args) {
-        Employee employee = Employee.
-                builder()
-                .lastName("azouzi")
-                .firstName("azouzi")
-                .email("atef.azouzi@enis.tn")
-                .build();
-
 
         SpringApplication.run(SpringTestApplication.class, args);
     }
